@@ -1,0 +1,27 @@
+<!doctype html>
+<head>
+	<title>simplespinner Demo</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="../simple-spinner.css" />
+	<script src="../simple-spinner.js"></script>
+</head>
+<body>
+	<script>
+		$(function(){
+			var spinner = $('body').simplespinner();
+			
+			spinner.show()// shows the spinner
+
+			setTimeout(function(){
+				spinner.hide()// hides the spinner
+			}, 5000)
+			
+		})
+	</script>
+</body>
