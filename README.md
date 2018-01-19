@@ -26,17 +26,11 @@ It allows you to have multiple spinners for different sections of your page
 $(function(){
 	var spinner = $('body').simplespinner();
 
-	$(document).ajaxSend(function(){
-		spinner.show();
-	});
+	spinner.show()// shows the spinner
 
-	$(document).ajaxComplete(function( event, xhr, settings ) {
-		spinner.hide();
-	});
-
-	$(document).ajaxError(function( event, jqxhr, settings, thrownError ) {
-		spinner.hide();
-	});
+	setTimeout(function(){
+		spinner.hide()// hides the spinner
+	}, 3000)
 })
 ```
 
@@ -49,7 +43,7 @@ $('body').simplespinner({
 })
 ```
 
-There are few more options available, but those are all related to modify css clases for spinner elements. We don't recommend changing the classes unless you're trying to customize styles for your spinner and not happy with our classes names. 
+There are few more options available, but those are all related to modify css clases for spinner elements. **We don't recommend changing those other options unless you're trying to customize styles for your spinner and not happy with our classes names.**
 
 
 ```javascript
