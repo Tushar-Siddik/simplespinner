@@ -1,5 +1,5 @@
 # simplespinner jQuery plugin
-A simple spinner that even allows to multiple spinners on a signle page
+A simple spinner with a customizable label.
 
 
 ## Setup
@@ -18,6 +18,8 @@ var spinner = $('body').simplespinner();
 spinner.show()// shows the spinner
 spinner.hide()// hides the spinner
 ```
+
+It allows you to have multiple spinners for different sections of your page
 
 ### Example
 ```javascript
