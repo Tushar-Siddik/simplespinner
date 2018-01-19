@@ -74,4 +74,4 @@ containerLoadingClass|`simplespinner_loading`| `class` added to container (e.g. 
 
 
 ## Feedback
-Your feedback will highly appreciated.
+Your feedback will be highly appreciated.
