@@ -1,0 +1,19 @@
+<html>
+<head>
+<link rel="stylesheet" href="simple-spinner.css" />
+<script src="simple-spinner.js"></script>
+</head>
+<body>
+<script>
+$(function(){
+	var spinner = $('body').simplespinner();
+
+	spinner.show()// shows the spinner
+
+	setTimeout(function(){
+		spinner.hide()// hides the spinner
+	}, 3000)
+})
+</script>
+</body>
+</html>
